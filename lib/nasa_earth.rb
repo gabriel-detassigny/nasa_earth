@@ -12,7 +12,18 @@ class NasaEarth
     params[:api_key] = @api_key unless @api_key.nil?
     uri = URI('https://api.nasa.gov/planetary/earth/imagery')
     uri.query = URI.encode_www_form(params)
+    return _get_response uri
+  end
 
+  def assets params
+    params[:api_key] = @api_key unless @api_key.nil?
+    uri = URI('https://api.nasa.gov/planetary/earth/assets')
+    uri.query = URI.encode_www_form(params)
+    return _get_response uri
+  end
+
+  private
+  def _get_response uri
     res = Net::HTTP.get_response(uri)
     response = {
       'code'  => res.code,
