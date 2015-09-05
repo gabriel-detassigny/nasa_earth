@@ -1,0 +1,10 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    boolean (1.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  boolean (~> 1.0.1)
