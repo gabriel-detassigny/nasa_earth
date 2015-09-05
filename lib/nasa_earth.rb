@@ -6,14 +6,14 @@ class NasaEarth
   attr_accessor :api_key
 
   VALIDATORS = {
-    api_key: { mandatory: true, type: String },
-    lat:     { mandatory: true, type: Float },
-    lon:     { mandatory: true, type: Float },
-    dim:     { mandatory: false, type: Float },
-    date:    { mandatory: false, type: String },
-    begin:   { mandatory: false, type: String },
-    end:     { mandatory: false, type: String },
-    cloud:   { mandatory: false, type: Boolean },
+    api_key:     { mandatory: true, type: String },
+    lat:         { mandatory: true, type: Float },
+    lon:         { mandatory: true, type: Float },
+    dim:         { mandatory: false, type: Float },
+    date:        { mandatory: false, type: String },
+    begin:       { mandatory: false, type: String },
+    end:         { mandatory: false, type: String },
+    cloud_score: { mandatory: false, type: Boolean },
   }
 
   def initialize options = {}
