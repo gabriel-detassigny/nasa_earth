@@ -1,3 +1,3 @@
 source "https://rubygems.org"
 
-gem 'boolean', '~> 1.0.1'
+gem 'boolean', '~> 1.0'

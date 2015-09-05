@@ -10,5 +10,5 @@ Gem::Specification.new do |s|
   s.homepage    =
     'https://github.com/gabriel-detassigny/nasa_earth'
   s.license       = 'MIT'
-  s.add_runtime_dependency 'boolean', '~> 1.0.1'
+  s.add_runtime_dependency 'boolean', '~> 1.0'
 end
